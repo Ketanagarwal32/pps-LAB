@@ -1,0 +1,35 @@
+# write your code...
+
+book = {}
+
+def add():
+	x = input("Name: ")
+	y = input("Phone number: ")
+	book[x] = y
+
+def display():
+	print(book)
+
+def remove():
+	x = input("Name: ")
+	if x in book:
+		book.pop(x)
+	else:
+		print("Not found")
+while True:
+	print("1. Add Contact")
+	print("2. Remove Contact")
+	print("3. Display")
+	print("4. Quit")
+	b = int(input("Enter choice (1-4): "))
+	if b == 1:
+		add()
+	elif b == 2:
+		remove()
+	elif b == 3:
+		display()
+	elif b == 4:
+		break
+	else:
+		print("Invalid")
+		
