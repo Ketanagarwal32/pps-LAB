@@ -1,0 +1,5 @@
+def reverse(a):
+	r = a[::-1]
+	print(r)
+a = input()
+reverse(a)
