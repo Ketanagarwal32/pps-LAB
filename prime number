@@ -1,0 +1,15 @@
+num = int(input("Enter upper limit: "))
+if num == 0 or num ==1:
+	print(num,"is not a prime number")
+def prime(num):
+	for i in range(2,num):
+		flag = True
+		for j in range(2,i):
+			if(i%j==0):
+				flag = False
+				break
+		if flag == True:
+			print(i)
+			
+	return flag
+flag = prime(num)
