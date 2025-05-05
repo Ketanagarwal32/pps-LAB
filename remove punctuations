@@ -1,0 +1,6 @@
+s = input("")
+ms=""
+for char in s:
+	if char.isalnum() or char.isspace():
+		ms+=char
+print(ms)
