@@ -1,0 +1,3 @@
+S=int(input("S:")) 
+area = S**2
+print(f'{area}')
