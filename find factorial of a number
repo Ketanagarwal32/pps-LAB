@@ -1,0 +1,14 @@
+def factorial(a):
+	c = 1
+	if (a > 0):
+		for i in range(1 , 1 +a):
+			c = c * i
+		print(f"Factorial of given number is : {c}")
+	elif(a == 0):
+		print(f"Factorial of given number is : 1")
+		
+	else:
+		print("Enter a positive number")
+	
+a = int(input("Enter a number : "))
+factorial(a)
